@@ -410,3 +410,15 @@ h1, h2, h3, h4, h5, h6 {
 .text-success {
     color: var(--secondary-color) !important;
 }
+@media (max-width: 768px) {
+    .terminal {
+        max-width: 95% !important; /* Adjust the width to fit the screen */
+        padding: 1rem !important; /* Reduce padding on mobile */
+        font-size: 0.9rem !important; /* Adjust font size for better readability */
+    }
+
+    #terminal-input {
+        font-size: 1rem !important; /* Adjust input font size */
+    }
+}
+
