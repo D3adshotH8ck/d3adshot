@@ -28,6 +28,6 @@ You can view the live version of this portfolio here:
 
 ### 📞 Contact & Support
 Feel free to connect and support my work:
-* **X:** D3adshotH8ck
+* **X:** @D3adshotH8ck
 * **Instagram:** @d3adshotsec
 * **Buy me a coffee:** [https://buymeacoffee.com/d3adshot](https://buymeacoffee.com/d3adshot)
