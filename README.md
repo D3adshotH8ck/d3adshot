@@ -6,7 +6,7 @@ A digital portfolio and interactive terminal for D3adshot, an aspiring elite eth
 
 ### 🌐 Live Demo
 You can view the live version of this portfolio here:
-[https://d3adshot.github.io/](https://d3adshot.github.io/)
+[https://d3adshot.github.io/](https://d3adshoth8ck.github.io/d3adshot/)
 
 ---
 
