@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3adshot // Ethical Hacker & Web Developer</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-cyberpunk">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
+        <div class="container">
+            <!-- The brand logo and name are removed as per your request -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#socials">Socials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://d3adshoth8ck.github.io/" target="_blank" rel="noopener noreferrer">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://buymeacoffee.com/d3adshot" target="_blank" rel="noopener noreferrer" style="color: var(--tertiary-color);">Buy The Hacker a Coffee</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section id="hero" class="d-flex align-items-center justify-content-center vh-100 text-center">
+  <div class="container text-white position-relative">
+    <h1 id="scramble-text" class="display-1 fw-bold text-neon-green" data-value="D3adshot">
+      D3adshot
+    </h1>
+    <p id="typed-text" class="lead text-neon-blue"></p>
+    <a href="#socials" class="btn btn-cyberpunk mt-4">Contact me via social media</a>
+
+    <!-- Fake Terminal -->
+    <div class="terminal mt-4 text-start p-3 rounded bg-dark text-white shadow-lg">
+  <div id="terminal-output">
+    </div>
+  <div style="display: inline-flex; align-items: center; margin-top: 0.5rem;">
+    <span class="text-success" style="white-space: nowrap;">d3adshot@localhost:~$&nbsp;</span>
+    <input 
+      type="text" 
+      id="terminal-input" 
+      class="bg-dark border-0 text-white" 
+      autofocus 
+      autocomplete="off" 
+      spellcheck="false" 
+    />
+  </div>
+</div>
+
+  </div> <!-- CLOSE container div -->
+</section> <!-- CLOSE hero section -->
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-dark">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- The text content will animate from the left -->
+      <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll fade-in-left">
+        <h2 class="text-neon-green">ABOUT ME</h2>
+        <p>
+          I am an aspiring ethical hacker and web developer, constantly honing my skills to secure the digital landscape and create robust web solutions. I'm passionate about bug bounty hunting and building clean, efficient websites.
+        </p>
+        <p>
+          With a deep understanding of both offensive and defensive security, I strive to build systems that are not only functional but also resilient against modern threats.
+        </p>
+      </div>
+      <!-- The image will animate from the right -->
+      <div class="col-lg-6 text-center animate-on-scroll fade-in-right">
+        <img src="assets/images/D3adshot Logo.JPG" class="img-fluid rounded shadow logo-hover" alt="D3adshot Logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="py-5 bg-dark text-center text-white border-neon-green">
+  <div class="container">
+    <h2 class="text-neon-green mb-4">Certifications & Achievements</h2>
+    <div class="mb-4">
+      <h4 class="text-neon-blue cta-body-text">Click the badge below to view my TryHackMe profile & rank!</h4>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4649227" 
+                class="rounded shadow badge-iframe"
+                style="border:none;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center text-white mb-5">SERVICES</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white border-neon-green h-100 card-glitch">
+          <div class="card-body">
+            <i class="fas fa-shield-alt fa-3x text-neon-green mb-3"></i>
+            <h5 class="card-title text-neon-blue">Ethical Hacking</h5>
+            <p class="card-text">
+              Comprehensive penetration testing and vulnerability assessments to secure your digital assets.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white border-neon-blue h-100 card-glitch">
+          <div class="card-body">
+            <i class="fas fa-code fa-3x text-neon-blue mb-3"></i>
+            <h5 class="card-title text-neon-green">Web Development</h5>
+            <p class="card-text">
+              Building modern, responsive, and secure websites tailored to your specific needs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white border-neon-magenta h-100 card-glitch">
+          <div class="card-body">
+            <i class="fas fa-bug fa-3x text-neon-magenta mb-3"></i>
+            <h5 class="card-title text-neon-magenta">Bug Bounty Hunting</h5>
+            <p class="card-text">
+              Identifying and responsibly disclosing security vulnerabilities in web applications and services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Socials Section -->
+<section id="socials" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-neon-blue mb-4">CONNECT WITH ME</h2>
+    <p>You can connect with me on the following social media platforms:</p>
+    <div class="mt-4">
+      <!-- Social media links -->
+      <a href="https://x.com/D3adshotH8ck" class="text-neon-blue mx-3 social-icon" target="_blank"><i class="fab fa-x-twitter fa-3x"></i></a>
+      <a href="https://www.tiktok.com/@d3adshotsec" class="text-neon-blue mx-3 social-icon" target="_blank"><i class="fab fa-tiktok fa-3x"></i></a>
+      <a href="https://www.instagram.com/d3adshotsec" class="text-neon-blue mx-3 social-icon" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="https://www.youtube.com/@d3adshotsec" class="text-neon-blue mx-3 social-icon" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+      <a href="https://github.com/d3adshoth8ck" class="text-neon-blue mx-3 social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-3x"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark py-4 text-center text-secondary">
+    <div class="container">
+        <p class="mb-0">
+            © <span id="current-year"></span> Built & Maintaned By D3adshot. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
