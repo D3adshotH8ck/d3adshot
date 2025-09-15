@@ -1,5 +1,9 @@
 /* --- 00. GENERAL & GLOBAL STYLES --- */
-
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .content-section {
     max-width: 1000px;
     margin: 4rem auto; /* Increased vertical margin for better spacing */
@@ -293,15 +297,19 @@ h1 {
 .footer {
     width: 100%;
     padding: 2rem 0;
-    text-align: center;
-    margin-top: 4rem; /* Add space above the footer */
-    border-top: 1px solid rgba(0, 255, 255, 0.2); /* Subtle neon top border */
+    margin-top: 4rem;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+
+    /* --- Centering with Flexbox --- */
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center;    /* Vertically centers content */
 }
 
 .footer p {
     margin: 0;
     font-size: 0.9rem;
-    color: #a8b2d1; /* A slightly softer white */
+    color: #a8b2d1;
     letter-spacing: 1px;
 }
 /* --- 99. ANIMATIONS --- */
