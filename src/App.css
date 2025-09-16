@@ -32,6 +32,10 @@ main {
 }
 
 /* --- 01. HEADER --- */
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
 
 .header-container {
     display: flex;
