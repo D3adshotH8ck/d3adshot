@@ -2,74 +2,44 @@
 import React from 'react';
 import '../App.css'; 
 
-// Icons from Font Awesome
+// Import the new LogoLoop component
+import LogoLoop from './LogoLoop';
+
+// Import all the icons we need for the loop
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaSearch, FaBomb } from 'react-icons/fa'; 
-
-// Icons from Simple Icons for specific tools
 import { SiKalilinux, SiMetasploit, SiBurpsuite } from 'react-icons/si';
-
-// Icon from Bootstrap Icons
 import { BsGrid3X3GapFill } from 'react-icons/bs';
-
-// Icon from Tabler Icons
 import { TbRadar2 } from 'react-icons/tb';
+
+// Create the array of logos to pass to the component
+const skillLogos = [
+    { node: <FaHtml5 />, title: "HTML5" },
+    { node: <FaCss3Alt />, title: "CSS3" },
+    { node: <FaJs />, title: "JavaScript" },
+    { node: <FaReact />, title: "React" },
+    { node: <SiKalilinux />, title: "Kali Linux" },
+    { node: <SiMetasploit />, title: "Metasploit" },
+    { node: <SiBurpsuite />, title: "Burp Suite" },
+    { node: <FaSearch />, title: "OSINT" },
+];
 
 const Skills = () => {
     return (
-        <section id="skills" className="content-section fade-in">
+        <section id="skills" className="content-section">
             <h2>// 03. TOOLKIT & SKILLS</h2>
             
-            <div className="skills-grid">
-                {/* Each skill is now a self-contained item */}
-                <div className="skill-item">
-                    <FaHtml5 />
-                    <p>HTML5</p>
-                </div>
-                <div className="skill-item">
-                    <FaCss3Alt />
-                    <p>CSS3</p>
-                </div>
-                <div className="skill-item">
-                    <FaJs />
-                    <p>JavaScript</p>
-                </div>
-                <div className="skill-item">
-                    <FaReact />
-                    <p>React</p>
-                </div>
-                <div className="skill-item">
-                    <FaGithub />
-                    <p>GitHub</p>
-                </div>
-                <div className="skill-item">
-                    <SiKalilinux />
-                    <p>Kali Linux</p>
-                </div>
-                <div className="skill-item">
-                    <SiMetasploit />
-                    <p>Metasploit</p>
-                </div>
-                <div className="skill-item">
-                    <SiBurpsuite />
-                    <p>Burp Suite</p>
-                </div>
-                <div className="skill-item">
-                    <TbRadar2 />
-                    <p>Nmap</p>
-                </div>
-                <div className="skill-item">
-                    <FaSearch />
-                    <p>OSINT</p>
-                </div>
-                {/* --- NEW ITEMS --- */}
-                <div className="skill-item">
-                    <FaBomb />
-                    <p>Exploit DB</p>
-                </div>
-                <div className="skill-item">
-                    <BsGrid3X3GapFill />
-                    <p>MITRE ATT&CK</p>
-                </div>
+            <div style={{ marginTop: '3rem' }}>
+                <LogoLoop
+                    logos={skillLogos}
+                    speed={100}
+                    direction="left"
+                    logoHeight={60} /* Increased size for better visibility */
+                    gap={60}
+                    pauseOnHover
+                    scaleOnHover
+                    fadeOut
+                    fadeOutColor="#0d0d0e" /* Matches your off-black background */
+                />
             </div>
         </section>
     );

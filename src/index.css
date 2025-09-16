@@ -5,7 +5,7 @@
 
 /* Define your color palette as CSS variables for easy use */
 :root {
-  --off-black: #0d0d0f; 
+  --off-black: #0d0d0e; 
   --snow-white: #f0f0f0;
   --neon-blue: #00ffff;
   --neon-blue-glow: rgba(0, 255, 255, 0.5);
