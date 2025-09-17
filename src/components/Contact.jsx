@@ -27,8 +27,8 @@ const Contact = () => {
                 <a href="https://d3adshoth8ck.github.io/" target="_blank" rel="noopener noreferrer" className="contact-link-button">
                     <FaBlog /> My Blog
                 </a>
-                <a href="https://d3adshot.gumroad.com/l/nyzjxs" target="_blank" rel="noopener noreferrer" className="contact-link-button">
-                    <FaBook /> Beginner's Hacking Guide
+                <a href="https://buymeacoffee.com/d3adshot/e/458221" target="_blank" rel="noopener noreferrer" className="contact-link-button">
+                    <FaBook /> The Ethical Hacker's Playbook
                 </a>
                 <a href="https://www.buymeacoffee.com/d3adshot" target="_blank" rel="noopener noreferrer" className="contact-link-button">
                     <SiBuymeacoffee /> Buy Me a Coffee
