@@ -160,17 +160,15 @@ h1 {
     justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
-}
-
-/* Give each item in the grid a defined width */
-.certs-grid > * {
-    flex-basis: 300px; /* Give each item a base width */
+    align-items: stretch; /* This ensures all cards in a row have the same height */
 }
 
 .cert-card-link {
     text-decoration: none;
     color: inherit;
-    height: 100%; /* <-- IMPORTANT: Link takes full height of the card */
+    display: flex; /* Ensures the link stretches to fill the space */
+    flex: 1 1 300px; /* Flex properties for sizing */
+    max-width: 380px;
 }
 
 .cert-card {
@@ -181,9 +179,7 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* <-- IMPORTANT: The card itself takes full height */
+    width: 100%; /* Make the card fill the link container */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -196,6 +192,7 @@ h1 {
     max-width: 200px;
     height: auto;
     margin-bottom: 1.5rem;
+    margin-top: auto; /* Pushes content to center vertically */
 }
 
 .cert-card h3 {
@@ -206,19 +203,21 @@ h1 {
     font-size: 0.9rem;
     color: #aaa;
     margin-top: 0;
+    margin-bottom: auto; /* Pushes content to center vertically */
 }
 
+/* --- THIS IS THE CORRECTED STYLE FOR THE BADGE --- */
 .thm-badge-container {
-    width: 100%;
-    height: 175px;
-    border-radius: 5px;
-    overflow: hidden;
-    align-self: center; /* Ensures the badge is centered if the card content is shorter */
+    /* Make the container span the full width when it wraps to a new line */
+    flex-basis: 100%; 
+    display: flex;
+    justify-content: center; /* Center the iframe horizontally */
+    margin-top: 1rem; /* Add some space when it wraps */
 }
 
 .thm-badge-container iframe {
-    width: 100%;
-    height: 100%;
+    width: 350px; /* Give the iframe a fixed width */
+    height: 175px;
     border: none;
 }
 

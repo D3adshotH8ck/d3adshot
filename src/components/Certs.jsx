@@ -4,7 +4,7 @@ import '../App.css';
 
 import itAcademyLogo from '../assets/it-academy-logo.png'; 
 import cti101Image from '../assets/CTI101.png';
-
+import HTB from '../assets/HTB.PNG';
 const Certs = () => {
     return (
         <section id="certs" className="content-section fade-in">
@@ -26,6 +26,15 @@ const Certs = () => {
                         <img src={cti101Image} alt="Cyber Threat Intelligence Certificate" className="cert-logo-image" />
                         <h3>Cyber Threat Intelligence</h3>
                         <p className="cert-issuer">Certified by ArcX</p>
+                    </div>
+                </a>
+
+                {/* --- Hack The Box (now a link) --- */}
+                <a href="https://labs.hackthebox.com/achievement/badge/1179303/215" target="_blank" rel="noopener noreferrer" className="cert-card-link">
+                    <div className="cert-card">
+                        <img src={HTB} alt="Hack The Box Certificate" className="cert-logo-image" />
+                        <h3>Hack The Box</h3>
+                        <p className="cert-issuer">Rank On Hack The Box</p>
                     </div>
                 </a>
 
