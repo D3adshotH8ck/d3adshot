@@ -71,7 +71,7 @@ const Header = ({ isPwned }) => {
                     enable: true,
                     area: 800,
                 },
-                value: 80,
+                value: window.innerWidth < 768 ? 40 : 80,
             },
             opacity: {
                 value: 0.5,
