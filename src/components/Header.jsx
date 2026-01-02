@@ -8,10 +8,14 @@ import '../App.css';
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
-const Header = () => {
+// 1. Receive the isPwned prop
+const Header = ({ isPwned }) => {
     const particlesInit = useCallback(async (engine) => {
         await loadSlim(engine); 
     }, []);
+
+    // 2. Define the dynamic color
+    const lineColor = isPwned ? "#ff073a" : "#00ffff";
 
     const particlesOptions = {
         background: {
@@ -33,16 +37,20 @@ const Header = () => {
                     distance: 200,
                     links: {
                         opacity: 1,
+                        // 3. Apply the dynamic color here for hover effect
+                        color: lineColor, 
                     },
                 },
             },
         },
         particles: {
             color: {
-                value: "#f0f0f0",
+                // You can also turn the dots red by changing this to lineColor
+                value: "#f0f0f0", 
             },
             links: {
-                color: "#00ffff",
+                // 4. This is the key line for the background connections
+                color: lineColor, 
                 distance: 150,
                 enable: true,
                 opacity: 0.4,
@@ -86,9 +94,10 @@ const Header = () => {
                 options={particlesOptions}
             />
 
-            {/* --- Content is now inside this wrapper --- */}
             <div className="header-content">
                 <img src={avatar} alt="Avatar" className="avatar" />
+                {/* 5. You can also force the <h1> color here if needed, 
+                       though index.css should already handle it */}
                 <h1>D3ADSHOT</h1>
                 <TypeAnimation
                     sequence={[
